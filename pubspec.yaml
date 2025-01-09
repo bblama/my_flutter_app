@@ -1,4 +1,5 @@
 name: my_flutter_app
+
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -30,6 +31,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  translator: ^1.0.3+1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -60,6 +62,8 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/vocabulary.json
 
   # To add assets to your application, add an assets section, like this:
   # assets:

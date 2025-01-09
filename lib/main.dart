@@ -26,11 +26,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Learning App'),
-      ),
+      appBar: PreferredSize(preferredSize: Size.fromHeight(45.0),
+          child: Container(color: Colors.purple,
+          child: SafeArea(child: Column(mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Learning App',
+            style: TextStyle(color: Colors.white, fontSize: 26, fontWeight: FontWeight.bold),)
+          ],)),) ),
       body: Padding(
-        padding: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(20.0),
         child: GridView.count(
           crossAxisCount: 2, // Number of columns
           crossAxisSpacing: 10.0,
@@ -58,7 +62,7 @@ class HomePage extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: Colors.blueAccent,
-          borderRadius: BorderRadius.circular(10.0),
+          borderRadius: BorderRadius.circular(30.0),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.5),
@@ -71,7 +75,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(icon, size: 40, color: Colors.white),
+            Icon(icon, size: 35, color: Colors.white),
             SizedBox(height: 8),
             Text(
               title,
