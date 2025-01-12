@@ -27,13 +27,20 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(preferredSize: Size.fromHeight(260.0),
-          child: Container(color: Colors.purple,
-          child: SafeArea(child: Column(mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('Learning App',
-            style: TextStyle(color: Colors.white, fontSize: 26, fontWeight: FontWeight.bold),)
-          ],)),) ),
+        appBar: PreferredSize( preferredSize: Size.fromHeight(180.0), // Increase the height as needed
+     child: AppBar( backgroundColor: Colors.purple, flexibleSpace: Stack( children: [ Container( width: double.infinity, child: Image.asset( 'assets/syoambhu.jpeg', fit: BoxFit.cover, color: Colors.purple.withOpacity(0.5), // Add purple overlay
+     colorBlendMode: BlendMode.darken,// Blend mode to overlay color
+     ), ), Align( alignment: Alignment.bottomLeft, // Align text to the bottom left
+     child: Padding( padding: const EdgeInsets.only(left: 10.0, bottom: 3.0), // Adjust padding as needed
+     child: Text( 'Learning App', style: TextStyle( color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold, backgroundColor: Colors.purple.withOpacity(0.7), // Add background color for text
+     ),
+     ),
+     ),
+     ),
+     ],
+     ),
+     ),
+        ),
       body:Container(
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -71,7 +78,7 @@ class HomePage extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: Colors.blueAccent,
-          borderRadius: BorderRadius.circular(26.0),
+          borderRadius: BorderRadius.circular(260.0),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.5),
@@ -108,7 +115,7 @@ Widget _buildGridTileWithImage(BuildContext context, String title, String imageP
     child: Container(
       decoration: BoxDecoration(
         color: Colors.blueAccent,
-        borderRadius: BorderRadius.circular(30.0),
+        borderRadius: BorderRadius.circular(100.0),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.5),
