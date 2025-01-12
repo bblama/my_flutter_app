@@ -47,6 +47,7 @@ class _VocabularyPageState extends State<VocabularyPage> {
         centerTitle: true,
       ),
       body: ListView.builder(
+        padding: const EdgeInsets.all(16.0),
         itemCount: vocabularyList.length,
         itemBuilder: (context, index) {
           return ListTile(

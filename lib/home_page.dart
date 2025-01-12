@@ -3,6 +3,7 @@ import 'translate_page.dart';
 import 'vocabulary_page.dart';
 import 'practice_page.dart';
 import 'test_page.dart';
+import 'kanji_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -46,6 +47,15 @@ class HomePage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => TestPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Kanji'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => KanjiPage()),
               );
             },
           ),
