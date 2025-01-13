@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'translate_page.dart';
+import 'alphabet_page.dart';
 import 'vocabulary_page.dart';
-import 'practice_page.dart';
+import 'grammar_page.dart';
 import 'test_page.dart';
 import 'other_page.dart';
 import 'kanji_page.dart';
@@ -28,11 +28,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: PreferredSize( preferredSize: Size.fromHeight(180.0), // Increase the height as needed
-     child: AppBar( backgroundColor: Colors.purple, flexibleSpace: Stack( children: [ Container( width: double.infinity, child: Image.asset( 'assets/syoambhu.jpeg', fit: BoxFit.cover, color: Colors.purple.withOpacity(0.5), // Add purple overlay
+     child: AppBar( backgroundColor: Colors.purple, flexibleSpace: Stack( children: [ Container(
+       width: double.infinity,
+       child: Image.asset( 'assets/syoambhu.jpeg', fit: BoxFit.cover, color: Colors.purple.withOpacity(0.5), // Add purple overlay
      colorBlendMode: BlendMode.darken,// Blend mode to overlay color
      ), ), Align( alignment: Alignment.bottomLeft, // Align text to the bottom left
      child: Padding( padding: const EdgeInsets.only(left: 10.0, bottom: 3.0), // Adjust padding as needed
-     child: Text( 'Learning App', style: TextStyle( color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold, backgroundColor: Colors.purple.withOpacity(0.7), // Add background color for text
+     child: Text( 'Learn by Practice', style: TextStyle( color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold, backgroundColor: Colors.purple.withOpacity(0.7), // Add background color for text
      ),
      ),
      ),
@@ -44,7 +46,7 @@ class HomePage extends StatelessWidget {
       body:Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/use.jpeg"),
+              image: AssetImage("assets/nepal_flag.jpeg"),
               fit: BoxFit.fill),
         ),
       child:Padding(
@@ -54,9 +56,9 @@ class HomePage extends StatelessWidget {
           crossAxisSpacing: 12.0,
           mainAxisSpacing: 12.0,
           children: [
-            _buildGridTile(context, 'Translate', Icons.translate, TranslatePage()),
+            _buildGridTile(context, 'Alphabet', Icons.sort_by_alpha, AlphabetPage()),
             _buildGridTile(context, 'Vocabulary', Icons.book, VocabularyPage()),
-            _buildGridTile(context, 'Practice', Icons.school, PracticePage()),
+            _buildGridTile(context, 'Grammer', Icons.grid_on_outlined, GrammarPage()),
             _buildGridTile(context, 'Test', Icons.quiz, TestPage()),
             _buildGridTileWithImage(context, 'Kanji', 'assets/kanji4.jpeg', KanjiPage()),
             _buildGridTile(context, 'Other', Icons.more_horiz, OtherPage()),

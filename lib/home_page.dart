@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'translate_page.dart';
+import 'alphabet_page.dart';
 import 'vocabulary_page.dart';
-import 'practice_page.dart';
+import 'grammar_page.dart';
 import 'test_page.dart';
 import 'kanji_page.dart';
 
@@ -15,11 +15,11 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           ListTile(
-            title: Text('Translate'),
+            title: Text('Alphabet'),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => TranslatePage()),
+                MaterialPageRoute(builder: (context) => AlphabetPage()),
               );
             },
           ),
@@ -33,11 +33,11 @@ class HomePage extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text('Practice'),
+            title: Text('Grammer'),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => PracticePage()),
+                MaterialPageRoute(builder: (context) => GrammarPage()),
               );
             },
           ),

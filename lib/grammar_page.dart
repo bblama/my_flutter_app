@@ -1,35 +1,35 @@
 import 'package:flutter/material.dart';
-import 'jlpt_n1_vocab.dart';
-import 'jlpt_n2_vocab.dart';
-import 'jlpt_n3_vocab.dart';
-import 'jlpt_n4_vocab.dart';
-import 'jlpt_n5_vocab.dart';
+import 'jlpt_n1_grammar.dart';
+import 'jlpt_n2_grammar.dart';
+import 'jlpt_n3_grammar.dart';
+import 'jlpt_n4_grammar.dart';
+import 'jlpt_n5_grammar.dart';
 
-class VocabularyPage extends StatelessWidget {
-  final List<Map<String, dynamic>> vocabTopics = [
+class GrammarPage extends StatelessWidget {
+  final List<Map<String, dynamic>> grammerTopics = [
     {
       'title': 'JLPT N5 Level',
-      'page': JLPT_N5_vocab(),
+      'page': JLPT_N5_grammar(),
       'icon': 'assets/n5.jpg',
     },
     {
       'title': 'JLPT N4 Level',
-      'page': JLPT_N4_vocab(),
+      'page': JLPT_N4_grammar(),
       'icon': 'assets/n4.jpg',
     },
     {
       'title': 'JLPT N3 Level',
-      'page': JLPT_N3_vocab(),
+      'page': JLPT_N3_grammar(),
       'icon': 'assets/n3.jpg',
     },
     {
       'title': 'JLPT N2 Level',
-      'page': JLPT_N2_vocab(),
+      'page': JLPT_N2_grammmar(),
       'icon': 'assets/n2.jpg',
     },
     {
       'title': 'JLPT N1 Level',
-      'page': JLPT_N1_vocab(),
+      'page': JLPT_N1_grammar(),
       'icon': 'assets/n1.jpg',
     }
   ];
@@ -62,7 +62,7 @@ class VocabularyPage extends StatelessWidget {
           child: AppBar(backgroundColor: Colors.purple, flexibleSpace:
           Stack(children: [Container(
             width: double.infinity,
-            child: Image.asset('assets/jlpt_vocabulary.jpg',fit: BoxFit.cover,
+            child: Image.asset('assets/jlpt_grammar.jpg',fit: BoxFit.cover,
               color: Colors.purple.withOpacity(0.5),
               colorBlendMode: BlendMode.darken,
             ),
@@ -75,13 +75,13 @@ class VocabularyPage extends StatelessWidget {
           ],),)),
       body: ListView.builder(
         padding: const EdgeInsets.all(20.0),
-        itemCount: vocabTopics.length,
+        itemCount: grammerTopics.length,
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
               Navigator.push(context,
                 MaterialPageRoute(
-                    builder: (context) => vocabTopics[index]['page']),
+                    builder: (context) => grammerTopics[index]['page']),
               );
             },
             child: Container(
@@ -103,7 +103,7 @@ class VocabularyPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    vocabTopics[index]['title'],
+                    grammerTopics[index]['title'],
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -112,7 +112,7 @@ class VocabularyPage extends StatelessWidget {
                   ),
                   //Icon(icons[index % icons.length], color: Colors.white),
                   Image.asset(
-                    vocabTopics[index]['icon'],
+                    grammerTopics[index]['icon'],
                     width: 30,
                     height: 30,
                     fit: BoxFit.cover,

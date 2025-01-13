@@ -65,8 +65,22 @@ flutter:
   assets:
     - assets/vocabulary.json
     - assets/use.jpeg
+    - assets/nepal_flag.jpeg
+    - assets/jlpt_grammar.jpg
+    - assets/jlpt_vocabulary.jpg
     - assets/kanji4.jpeg
     - assets/syoambhu.jpeg
+    - assets/n1.jpg
+    - assets/n2.jpg
+    - assets/n3.jpg
+    - assets/n4.jpg
+    - assets/n5.jpg
+    - assets/kanji.png
+    - assets/n5_kanji.jpg
+    - assets/n4_kanji.jpg
+    - assets/n3_kanji.jpg
+    - assets/n2_kanji.jpg
+    - assets/n1_kanji.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
