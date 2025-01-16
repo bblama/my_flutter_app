@@ -8,7 +8,7 @@ class AlphabetPage extends StatefulWidget {
 }
 
 class _AlphabetPageState extends State<AlphabetPage> {
-  int _selectedButtonIndex = -1;
+  int _selectedButtonIndex = 0;
 
   void _onButtonPressed(int index) {
     setState(() {
@@ -30,9 +30,16 @@ class _AlphabetPageState extends State<AlphabetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Japanese Alphabet'),
-        backgroundColor: Colors.purple,
+      appBar: PreferredSize( preferredSize: Size.fromHeight(185.0), // Increase the height as needed
+        child: AppBar( backgroundColor: Colors.purple, flexibleSpace: Stack( children: [ Container(
+          width: double.infinity,
+          child: Image.asset( 'assets/nepal_mountain.jpg', fit: BoxFit.cover, color: Colors.purple.withOpacity(0.5), // Add purple overlay
+            colorBlendMode: BlendMode.darken,// Blend mode to overlay color
+          ),
+        ),
+        ],
+        ),
+        ),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start, // Align buttons to the start of the column

@@ -64,7 +64,6 @@ flutter:
   uses-material-design: true
   assets:
     - assets/vocabulary.json
-    - assets/use.jpeg
     - assets/nepal_flag.jpeg
     - assets/jlpt_grammar.jpg
     - assets/jlpt_vocabulary.jpg
@@ -81,6 +80,10 @@ flutter:
     - assets/n3_kanji.jpg
     - assets/n2_kanji.jpg
     - assets/n1_kanji.jpg
+    - assets/hiragana.png
+    - assets/katakana.png
+    - assets/nepal_mountain.jpg
+    - assets/n1_n5_jlpt.webp
 
   # To add assets to your application, add an assets section, like this:
   # assets:

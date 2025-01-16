@@ -10,27 +10,27 @@ class GrammarPage extends StatelessWidget {
     {
       'title': 'JLPT N5 Level',
       'page': JLPT_N5_grammar(),
-      'icon': 'assets/n5.jpg',
+      'icon': 'assets/n1_n5_jlpt.webp',
     },
     {
       'title': 'JLPT N4 Level',
       'page': JLPT_N4_grammar(),
-      'icon': 'assets/n4.jpg',
+      'icon': 'assets/n1_n5_jlpt.webp',
     },
     {
       'title': 'JLPT N3 Level',
       'page': JLPT_N3_grammar(),
-      'icon': 'assets/n3.jpg',
+      'icon': 'assets/n1_n5_jlpt.webp',
     },
     {
       'title': 'JLPT N2 Level',
       'page': JLPT_N2_grammmar(),
-      'icon': 'assets/n2.jpg',
+      'icon': 'assets/n1_n5_jlpt.webp',
     },
     {
       'title': 'JLPT N1 Level',
       'page': JLPT_N1_grammar(),
-      'icon': 'assets/n1.jpg',
+      'icon': 'assets/n1_n5_jlpt.webp',
     }
   ];
 

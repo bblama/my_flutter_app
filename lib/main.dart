@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Learning App',
+      title: 'Language Learning App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -27,14 +27,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: PreferredSize( preferredSize: Size.fromHeight(180.0), // Increase the height as needed
+        appBar: PreferredSize( preferredSize: Size.fromHeight(185.0), // Increase the height as needed
      child: AppBar( backgroundColor: Colors.purple, flexibleSpace: Stack( children: [ Container(
        width: double.infinity,
        child: Image.asset( 'assets/syoambhu.jpeg', fit: BoxFit.cover, color: Colors.purple.withOpacity(0.5), // Add purple overlay
      colorBlendMode: BlendMode.darken,// Blend mode to overlay color
      ), ), Align( alignment: Alignment.bottomLeft, // Align text to the bottom left
      child: Padding( padding: const EdgeInsets.only(left: 10.0, bottom: 3.0), // Adjust padding as needed
-     child: Text( 'Learn by Practice', style: TextStyle( color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold, backgroundColor: Colors.purple.withOpacity(0.7), // Add background color for text
+     child: Text( 'Learn by Practice', style: TextStyle( color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold, backgroundColor: Colors.purple.withOpacity(0.7), // Add background color for text
      ),
      ),
      ),
@@ -53,8 +53,8 @@ class HomePage extends StatelessWidget {
         padding: const EdgeInsets.all(25.0),
         child: GridView.count(
           crossAxisCount: 2, // Number of columns
-          crossAxisSpacing: 12.0,
-          mainAxisSpacing: 12.0,
+          crossAxisSpacing: 14.0,
+          mainAxisSpacing: 16.0,
           children: [
             _buildGridTile(context, 'Alphabet', Icons.sort_by_alpha, AlphabetPage()),
             _buildGridTile(context, 'Vocabulary', Icons.book, VocabularyPage()),
