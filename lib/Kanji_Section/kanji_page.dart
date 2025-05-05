@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'jlpt_n1_kanji.dart';
-import 'jlpt_n2_kanji.dart';
-import 'jlpt_n3_kanji.dart';
-import 'jlpt_n4_kanji.dart';
-import 'jlpt_n5_kanji.dart';
+import 'Kanji_Section/jlpt_n1_kanji.dart';
+import 'Kanji_Section/jlpt_n2_kanji.dart';
+import 'Kanji_Section/jlpt_n3_kanji.dart';
+import 'Kanji_Section/jlpt_n4_kanji.dart';
+import 'Kanji_Section/jlpt_n5_kanji.dart';
 
 class KanjiPage extends StatelessWidget {
   final List<Map<String, dynamic>> kanjiTopics = [

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class TestPage extends StatelessWidget {
+class SpeakingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Test'),
+        title: Text('Speaking'),
       ),
       body: Center(
         child: Text('Tests and Quizzes Here'),

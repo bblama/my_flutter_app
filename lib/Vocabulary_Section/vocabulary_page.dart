@@ -1,36 +1,36 @@
 import 'package:flutter/material.dart';
-import 'jlpt_n1_grammar.dart';
-import 'jlpt_n2_grammar.dart';
-import 'jlpt_n3_grammar.dart';
-import 'jlpt_n4_grammar.dart';
-import 'jlpt_n5_grammar.dart';
+import 'Vocabulary_Section/jlpt_n1_vocab.dart';
+import 'Vocabulary_Section/jlpt_n2_vocab.dart';
+import 'Vocabulary_Section/jlpt_n3_vocab.dart';
+import 'Vocabulary_Section/jlpt_n4_vocab.dart';
+import 'Vocabulary_Section/jlpt_n5_vocab.dart';
 
-class GrammarPage extends StatelessWidget {
-  final List<Map<String, dynamic>> grammerTopics = [
+class VocabularyPage extends StatelessWidget {
+  final List<Map<String, dynamic>> vocabTopics = [
     {
       'title': 'JLPT N5 Level',
-      'page': JLPT_N5_grammar(),
-      'icon': 'assets/n1_n5_jlpt.webp',
+      'page': JLPT_N5_vocab(),
+      'icon': 'assets/n5.jpg',
     },
     {
       'title': 'JLPT N4 Level',
-      'page': JLPT_N4_grammar(),
-      'icon': 'assets/n1_n5_jlpt.webp',
+      'page': JLPT_N4_vocab(),
+      'icon': 'assets/n4.jpg',
     },
     {
       'title': 'JLPT N3 Level',
-      'page': JLPT_N3_grammar(),
-      'icon': 'assets/n1_n5_jlpt.webp',
+      'page': JLPT_N3_vocab(),
+      'icon': 'assets/n3.jpg',
     },
     {
       'title': 'JLPT N2 Level',
-      'page': JLPT_N2_grammmar(),
-      'icon': 'assets/n1_n5_jlpt.webp',
+      'page': JLPT_N2_vocab(),
+      'icon': 'assets/n2.jpg',
     },
     {
       'title': 'JLPT N1 Level',
-      'page': JLPT_N1_grammar(),
-      'icon': 'assets/n1_n5_jlpt.webp',
+      'page': JLPT_N1_vocab(),
+      'icon': 'assets/n1.jpg',
     }
   ];
 
@@ -62,7 +62,7 @@ class GrammarPage extends StatelessWidget {
           child: AppBar(backgroundColor: Colors.purple, flexibleSpace:
           Stack(children: [Container(
             width: double.infinity,
-            child: Image.asset('assets/jlpt_grammar.jpg',fit: BoxFit.cover,
+            child: Image.asset('assets/jlpt_vocabulary.jpg',fit: BoxFit.cover,
               color: Colors.purple.withOpacity(0.5),
               colorBlendMode: BlendMode.darken,
             ),
@@ -75,13 +75,13 @@ class GrammarPage extends StatelessWidget {
           ],),)),
       body: ListView.builder(
         padding: const EdgeInsets.all(20.0),
-        itemCount: grammerTopics.length,
+        itemCount: vocabTopics.length,
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
               Navigator.push(context,
                 MaterialPageRoute(
-                    builder: (context) => grammerTopics[index]['page']),
+                    builder: (context) => vocabTopics[index]['page']),
               );
             },
             child: Container(
@@ -103,7 +103,7 @@ class GrammarPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    grammerTopics[index]['title'],
+                    vocabTopics[index]['title'],
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -112,7 +112,7 @@ class GrammarPage extends StatelessWidget {
                   ),
                   //Icon(icons[index % icons.length], color: Colors.white),
                   Image.asset(
-                    grammerTopics[index]['icon'],
+                    vocabTopics[index]['icon'],
                     width: 30,
                     height: 30,
                     fit: BoxFit.cover,
