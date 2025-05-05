@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'Vocabulary_Section/jlpt_n1_vocab.dart';
-import 'Vocabulary_Section/jlpt_n2_vocab.dart';
-import 'Vocabulary_Section/jlpt_n3_vocab.dart';
-import 'Vocabulary_Section/jlpt_n4_vocab.dart';
-import 'Vocabulary_Section/jlpt_n5_vocab.dart';
+import 'jlpt_n1_vocab.dart';
+import 'jlpt_n2_vocab.dart';
+import 'jlpt_n3_vocab.dart';
+import 'jlpt_n4_vocab.dart';
+import 'jlpt_n5_vocab.dart';
 
 class VocabularyPage extends StatelessWidget {
   final List<Map<String, dynamic>> vocabTopics = [

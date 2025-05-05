@@ -1,0 +1,101 @@
+import 'package:flutter/material.dart';
+
+class grammer_1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // Get screen dimensions
+    double screenWidth = MediaQuery.of(context).size.width;
+    double screenHeight = MediaQuery.of(context).size.height;
+
+    // TODO: implement build
+    return Scaffold(
+      //appBar: AppBar(title: Text('N4 #1.だけ')),
+      appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
+        child: AppBar(title: Text('N4 #1.あまり〜ない'),
+          backgroundColor: Colors.blue,
+          centerTitle: true,
+          flexibleSpace: Stack(
+            children: [
+              Container(
+                width: double.infinity,
+              ),
+            ],),),),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0), //responsive padding
+        child: Column(
+          children: [
+            //1st box
+            Container(
+              width: screenWidth * 0.9, // for responsive width
+              padding: EdgeInsets.all(screenWidth * 0.03),
+              margin: EdgeInsets.symmetric(
+                vertical: screenHeight * 0.02,
+              ),
+              decoration: BoxDecoration(
+                color: Colors.blue[100],
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: Colors.blue),
+              ),
+              child: RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(
+                  style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
+                  children: [
+                    TextSpan(
+                      text: 'あまり～ない (amari~nai)\n',
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+                    ),
+                    TextSpan(text: 'あまり + V-ない', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nあまり + N + じゃない/ではない', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nあまり + いAdj (－い) + くない/くありません', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nあまり + なAdj + じゃない/でわない', style: TextStyle(color: Colors.red)),
+                    TextSpan(
+                      text: '\nnot very; not much',
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            //2nd box
+            Container(
+              width: screenWidth * 0.9,
+              padding: EdgeInsets.all(screenWidth * 0.05),
+              // margin: EdgeInsets.only(bottom: 16),
+              constraints: BoxConstraints(
+                minHeight: screenHeight * 0.3, //responsive minHeight
+              ),
+              decoration: BoxDecoration(
+                color: Colors.blue[100],
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: Colors.blue),
+              ),
+              child: RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(
+                  style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4),
+                  children: [
+                    TextSpan(
+                      text: '#1\n',
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
+                    ),
+                    TextSpan(text: 'あまりたくさんお酒を飲まないほうがいいですよ。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\namari takusan osake wo nomanai hou ga ii desu yo.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nYou shouldn`t drink too much alcohol.', style: TextStyle(color: Colors.black)),
+                    TextSpan(
+                      text: '\n\n#2\n',
+                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
+                    ),
+                    TextSpan(text: '鶏肉はあまり好きじゃないです。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\ntoriniku wa amari suki janai desu.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI don`t like chiken very much.', style: TextStyle(color: Colors.black)),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

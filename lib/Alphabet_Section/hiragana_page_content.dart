@@ -8,12 +8,11 @@ class HiraganaPageContent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-              'Hiragan-->ひらがな',
-          style: TextStyle(fontSize:20, fontWeight: FontWeight.bold,color: Colors.purple ),
+              '\nHiragan-->ひらがな',
+          style: TextStyle(fontSize:16, fontWeight: FontWeight.bold,color: Colors.purple ),
           ),
-          SizedBox(height:2),
           Image.asset('assets/hiragana.png',
-          width: 600, height:500, fit: BoxFit.cover,
+          width: 600, height:390, fit: BoxFit.fitHeight,
           ),
         ],
       )

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'alphabet_page.dart';
-import 'vocabulary_page.dart';
-import 'grammar_page.dart';
-import 'test_page.dart';
-import 'other_page.dart';
-import 'kanji_page.dart';
+import 'package:flutter/rendering.dart';
+import 'Other_Section/other_page.dart';
+import 'splash_screen.dart';
+import 'Alphabet_Section/alphabet_page.dart';
+import 'Vocabulary_Section/vocabulary_page.dart';
+import 'Grammer_Section/grammar_page.dart';
+import 'Speaking_Section/speaking_page.dart';
+import 'Kanji_Section/kanji_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,11 +16,49 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Language Learning App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      home: SplashScreen(),
+      routes: {
+        '/home': (context) => HomePage(),
+      },
+    );
+  }
+}
+
+class SplashScreen extends StatefulWidget {
+  @override
+  _SplashScreenState createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    //Future.delayed(Duration(seconds: 5), () {
+      //Navigator.pushReplacementNamed(context, '/home');
+   // });
+  }
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child:GestureDetector(
+        onTap: (){
+          Navigator.pushReplacementNamed(context, '/home');
+        },
+        child: Container(
+            width: 140,
+            height: 140,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(45),
+              image: DecorationImage(
+                image: AssetImage('assets/learn.png',),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
       ),
-      home: HomePage(),
+      ),
     );
   }
 }
@@ -27,22 +67,31 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: PreferredSize( preferredSize: Size.fromHeight(185.0), // Increase the height as needed
-     child: AppBar( backgroundColor: Colors.purple, flexibleSpace: Stack( children: [ Container(
-       width: double.infinity,
-       child: Image.asset( 'assets/syoambhu.jpeg', fit: BoxFit.cover, color: Colors.purple.withOpacity(0.5), // Add purple overlay
-     colorBlendMode: BlendMode.darken,// Blend mode to overlay color
-     ), ), Align( alignment: Alignment.bottomLeft, // Align text to the bottom left
-     child: Padding( padding: const EdgeInsets.only(left: 10.0, bottom: 3.0), // Adjust padding as needed
-     child: Text( 'Learn by Practice', style: TextStyle( color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold, backgroundColor: Colors.purple.withOpacity(0.7), // Add background color for text
-     ),
-     ),
-     ),
-     ),
-     ],
-     ),
-     ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(MediaQuery.of(context).size.height * 0.2), // Dynamically scales
+        child: AppBar(
+          backgroundColor: Colors.purple,
+          flexibleSpace: LayoutBuilder(
+            builder: (context, constraints) {
+              return Stack(
+                children: [
+                  Container(
+                    width: constraints.maxWidth, // Uses available width
+                    height: constraints.maxHeight, // Uses available height
+                    //alignment: Alignment.topLeft,
+                    child: Image.asset(
+                      'assets/syoambhu.jpeg',
+                      fit: BoxFit.fill,
+                      color: Colors.purple.withOpacity(0.5),
+                      colorBlendMode: BlendMode.darken,
+                    ),
+                  ),
+                ],
+              );
+            },
+          ),
         ),
+      ),
       body:Container(
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -58,8 +107,8 @@ class HomePage extends StatelessWidget {
           children: [
             _buildGridTile(context, 'Alphabet', Icons.sort_by_alpha, AlphabetPage()),
             _buildGridTile(context, 'Vocabulary', Icons.book, VocabularyPage()),
-            _buildGridTile(context, 'Grammer', Icons.grid_on_outlined, GrammarPage()),
-            _buildGridTile(context, 'Test', Icons.quiz, TestPage()),
+            _buildGridTile(context, 'Grammer', Icons.rule_sharp, GrammarPage()),
+            _buildGridTile(context, 'Speaking', Icons.mic, SpeakingPage()),
             _buildGridTileWithImage(context, 'Kanji', 'assets/kanji4.jpeg', KanjiPage()),
             _buildGridTile(context, 'Other', Icons.more_horiz, OtherPage()),
           ],

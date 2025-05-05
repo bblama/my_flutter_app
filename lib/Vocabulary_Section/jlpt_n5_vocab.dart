@@ -55,6 +55,20 @@ class JLPT_N5_vocab extends StatelessWidget {
                   colorBlendMode: BlendMode.darken,
                 ),
               ),
+              Align(
+                alignment: Alignment.bottomLeft,
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 16.0, bottom: 16.0),
+                  child: Text(
+                    'JLPT N5 Vocabulary',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
@@ -67,18 +81,29 @@ class JLPT_N5_vocab extends StatelessWidget {
               itemCount: imageList.length,
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 8.0),
-                  child: Image.asset(
-                    imageList[index],
-                    fit: BoxFit.cover,
-                    errorBuilder: (context, error, stackTrace) {
-                      return Container(
-                        color: Colors.grey,
-                        width: 100,
-                        height: 100,
-                        child: const Center(child: Text("Error")),
-                      );
-                    },
+                  padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(12.0),
+                    child: Image.asset(
+                      imageList[index],
+                      fit: BoxFit.cover,
+                      width: double.infinity,
+                      height: 200, // Fixed height for each image
+                      errorBuilder: (context, error, stackTrace) {
+                        return Container(
+                          color: Colors.grey[300],
+                          width: double.infinity,
+                          height: 400,
+                          child: Center(
+                            child: Icon(
+                              Icons.error,
+                              color: Colors.red,
+                              size: 50,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
                   ),
                 );
               },

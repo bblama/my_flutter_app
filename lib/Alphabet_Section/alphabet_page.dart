@@ -23,22 +23,36 @@ class _AlphabetPageState extends State<AlphabetPage> {
       case 1:
         return KatakanaPageContent();
       default:
-        return Center(child: Text('Select a Page', style: TextStyle(fontSize: 18)));
+        return Center(child: Text('Select a Page', style: TextStyle(fontSize: 16)));
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize( preferredSize: Size.fromHeight(185.0), // Increase the height as needed
-        child: AppBar( backgroundColor: Colors.purple, flexibleSpace: Stack( children: [ Container(
-          width: double.infinity,
-          child: Image.asset( 'assets/nepal_mountain.jpg', fit: BoxFit.cover, color: Colors.purple.withOpacity(0.5), // Add purple overlay
-            colorBlendMode: BlendMode.darken,// Blend mode to overlay color
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(MediaQuery.of(context).size.height * 0.2), // Dynamically scales
+        child: AppBar(
+          backgroundColor: Colors.purple,
+          flexibleSpace: LayoutBuilder(
+            builder: (context, constraints) {
+              return Stack(
+                children: [
+                  Container(
+                    width: constraints.maxWidth, // Uses available width
+                    height: constraints.maxHeight, // Uses available height
+                    //alignment: Alignment.topLeft,
+                    child: Image.asset(
+                      'assets/nepal_mountain.jpg',
+                      fit: BoxFit.fill,
+                      color: Colors.purple.withOpacity(0.5),
+                      colorBlendMode: BlendMode.darken,
+                    ),
+                  ),
+                ],
+              );
+            },
           ),
-        ),
-        ],
-        ),
         ),
       ),
       body: Column(
@@ -50,8 +64,8 @@ class _AlphabetPageState extends State<AlphabetPage> {
               mainAxisAlignment: MainAxisAlignment.center, // Align buttons in the center horizontally
               children: [
                 SizedBox(
-                  width: 185, // Set width for buttons
-                  height: 57, // Set height for buttons
+                  width: 155, // Set width for buttons
+                  height: 55, // Set height for buttons
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: _selectedButtonIndex == 0 ? Colors.blue.shade700 : Colors.blue, // Highlight selected button
@@ -68,7 +82,7 @@ class _AlphabetPageState extends State<AlphabetPage> {
                     child: Text(
                       'Hiragara\nひらがな',
                       style: TextStyle(
-                        fontSize: 20, // Set font size
+                        fontSize: 16, // Set font size
                         fontWeight: FontWeight.bold, // Set font weight
                       ),
                     ),
@@ -76,8 +90,8 @@ class _AlphabetPageState extends State<AlphabetPage> {
                 ),
                 SizedBox(width: 20), // Space between buttons
                 SizedBox(
-                  width: 185, // Set width for buttons
-                  height: 57, // Set height for buttons
+                  width: 155, // Set width for buttons
+                  height: 55, // Set height for buttons
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: _selectedButtonIndex == 1 ? Colors.green.shade700 : Colors.green, // Highlight selected button
@@ -94,7 +108,7 @@ class _AlphabetPageState extends State<AlphabetPage> {
                     child: Text(
                       'Katakana\nカタカナ',
                       style: TextStyle(
-                        fontSize: 20, // Set font size
+                        fontSize: 16, // Set font size
                         fontWeight: FontWeight.bold, // Set font weight
                       ),
                     ),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'Grammer_Section/jlpt_n1_grammar.dart';
-import 'Grammer_Section/jlpt_n2_grammar.dart';
-import 'Grammer_Section/jlpt_n3_grammar.dart';
-import 'Grammer_Section/jlpt_n4_grammar.dart';
-import 'Grammer_Section/jlpt_n5_grammar.dart';
+import 'jlpt_n1_grammar.dart';
+import 'jlpt_n2_grammar.dart';
+import 'jlpt_n3_grammar.dart';
+import 'jlpt_n4_grammar.dart';
+import 'jlpt_n5_grammar.dart';
 
 class GrammarPage extends StatelessWidget {
   final List<Map<String, dynamic>> grammerTopics = [
@@ -47,32 +47,34 @@ class GrammarPage extends StatelessWidget {
     Colors.limeAccent,
   ];
 
-  /* final List<IconData> icons =[
-    Icons.star,
-    Icons.nature,
-    Icons.book,
-    Icons.language,
-    Icons.school,
-  ];*/
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(preferredSize: Size.fromHeight(190.0),
-          child: AppBar(backgroundColor: Colors.purple, flexibleSpace:
-          Stack(children: [Container(
-            width: double.infinity,
-            child: Image.asset('assets/jlpt_grammar.jpg',fit: BoxFit.cover,
-              color: Colors.purple.withOpacity(0.5),
-              colorBlendMode: BlendMode.darken,
-            ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(MediaQuery.of(context).size.height * 0.2), // Dynamically scales
+        child: AppBar(
+          backgroundColor: Colors.purple,
+          flexibleSpace: LayoutBuilder(
+            builder: (context, constraints) {
+              return Stack(
+                children: [
+                  Container(
+                    width: constraints.maxWidth, // Uses available width
+                    height: constraints.maxHeight, // Uses available height
+                    //alignment: Alignment.topLeft,
+                    child: Image.asset(
+                      'assets/jlpt_grammar.jpg',
+                      fit: BoxFit.fill,
+                      color: Colors.purple.withOpacity(0.5),
+                      colorBlendMode: BlendMode.darken,
+                    ),
+                  ),
+                ],
+              );
+            },
           ),
-            /*Align(alignment:Alignment.bottomLeft,
-            child: Padding(padding: const EdgeInsets.only(left: 10.0, bottom: 0.0),
-            child: Text('JLPT Kanji Level',style: TextStyle(color: Colors.white,fontSize: 22,fontWeight: FontWeight.bold,backgroundColor: Colors.purple),),
-            ),
-            ),*/
-          ],),)),
+        ),
+      ),
       body: ListView.builder(
         padding: const EdgeInsets.all(20.0),
         itemCount: grammerTopics.length,
@@ -105,7 +107,7 @@ class GrammarPage extends StatelessWidget {
                   Text(
                     grammerTopics[index]['title'],
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ),

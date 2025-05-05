@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'alphabet_page.dart';
-import 'vocabulary_page.dart';
-import 'grammar_page.dart';
-import 'test_page.dart';
-import 'kanji_page.dart';
+import 'Alphabet_Section/alphabet_page.dart';
+import 'Vocabulary_Section/vocabulary_page.dart';
+import 'Grammer_Section/grammar_page.dart';
+import 'Speaking_Section/speaking_page.dart';
+import 'Kanji_Section/kanji_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -42,11 +42,11 @@ class HomePage extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text('Test'),
+            title: Text('Speaking'),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => TestPage()),
+                MaterialPageRoute(builder: (context) => SpeakingPage()),
               );
             },
           ),

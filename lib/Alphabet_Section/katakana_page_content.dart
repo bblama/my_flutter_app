@@ -8,12 +8,12 @@ class KatakanaPageContent extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Katakana-->カタカナ',
-              style: TextStyle(fontSize:20, fontWeight: FontWeight.bold,color: Colors.purple ),
+              '\nKatakana-->カタカナ',
+              style: TextStyle(fontSize:16, fontWeight: FontWeight.bold,color: Colors.purple ),
             ),
-            SizedBox(height:2),
+            //SizedBox(height:2),
             Image.asset('assets/katakana.png',
-              width: 600, height:500, fit: BoxFit.cover,
+              width: 600, height:390,
             ),
           ],
         )
