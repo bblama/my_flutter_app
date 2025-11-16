@@ -10,7 +10,7 @@ class grammer_27 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#27.代わりに'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,13 @@ class grammer_27 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: '代わりに (kawari ni)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'N + の代わりに', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nV-casual + 代わりに', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\ninstead of, in exchange for',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +76,16 @@ class grammer_27 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '日本語を教えてくれる代わりに、田中さんに中国語を教えています。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nnihongo wo oshiete kureru kawari ni, tanakasan ni chuugokugo wo oshiete imasu.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI teach Tanaka Chinese while he teaches me Japanese.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '映画を見に行く代わりに家でテレビを見る。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\neiga wo mi ni iku kawari ni ie de terebi wo miru.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI`m watching TV at home instead of going to the movies.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

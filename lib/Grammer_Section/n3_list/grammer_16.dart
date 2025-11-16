@@ -10,7 +10,7 @@ class grammer_16 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#16.がち'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,13 @@ class grammer_16 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'がち (gachi)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-stem + がちだ', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nN + がちだ', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\napt to do, tend to do',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +76,16 @@ class grammer_16 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '先日、病気がちのおばを見舞いに行った。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nsenjitsu, byouki gachi no oba wo mimai ni itta.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI came to visit my sick aunt yesterday.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '何度も失敗をすると、また失敗をするのではないかと考えがちになる。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nnando mo shippai wo suru to, mata shippai wo suru no dewa nai ka to kagae gachi ni naru.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nAfter you`ve failed many times, you tend to think whether you`re gonna fail again if you try.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

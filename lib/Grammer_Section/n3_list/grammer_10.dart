@@ -10,7 +10,7 @@ class grammer_10 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#10.べきではない'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,12 @@ class grammer_10 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'べきではない (beki dewa nai)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-dictionary + べきではない', style: TextStyle(color: Colors.red )),
                     TextSpan(
-                      text: '\n',
+                      text: '\nmust not do, should not do',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +75,16 @@ class grammer_10 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '親に対してはこんな失礼なことを言うべきではありません。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\noya ni taishite wa konna shitsurei na koto wo iu beki dewa arimasen.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nYou should not say such rude things to your parents.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '子供の安全を考えれば、夜遅くまで外で遊ばせるべきではない。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkodomo no anzen wo kangaereba, yoru osoku made soto de asobaseru beki dewa nai.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nFor your own children`s safety, you should not allow them to play outside late at night.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

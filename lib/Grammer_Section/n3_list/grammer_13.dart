@@ -10,7 +10,7 @@ class grammer_13 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#13.どころか'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_13 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'どころか (dokoro ka)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-dictionary + どころか', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nいAdj + どころか', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + などころか', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nN + どころか', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nfar from, anything but, let alone, much less',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_13 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '私は彼に役に立つどころか、迷惑もかけた。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nwatashi wa kare ni yaku ni tatsu dokoro ka, meiwaku mo kaketa.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI not only didn`t help him, I also caused him trouble.', style: TextStyle(color: Colors.black)),
                     TextSpan(
-                      text: '\n\n#2\n',
+                      text: '\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '忙しくて、休みをとるどころか、食事をする時間もない。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nisogashikute, yasumi o toru dokoro ka, shokuji o suru jikan mo nai.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI`m so busy that I don`t even have time to eat, let alone taking a day off.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

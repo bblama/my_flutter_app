@@ -10,7 +10,7 @@ class grammer_22 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#22.いくら～ても'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_22 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'いくら～ても (ikura ~ temo)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'いくら + V-て + も', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nいくら + N + でも', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nいくら + いAdj (-い) + くても', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nいくら + なAdj + でも', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nno matter how',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_22 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'いくら好きでもコーラーをたくさん飲むと、身体に悪いですよ。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nikura sukidemo kooraa wo takusan nomu to shintai ni warui desu yo.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nNo matter how much you love Cocacola, it`s not good for your health if you drink too much.', style: TextStyle(color: Colors.black)),
                     TextSpan(
-                      text: '\n\n#2\n',
+                      text: '\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'いくら調べてもわからなかったので、先生に聞いた。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nikura shirabetemo wakaranakatta node, sensei ni kiita.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI could not understand no matter how much I studied so I asked my teacher.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

@@ -10,7 +10,7 @@ class grammer_36 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#36.ことがある'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,12 @@ class grammer_36 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'ことがある (koto ga aru)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-dictionary + ことがある', style: TextStyle(color: Colors.red )),
                     TextSpan(
-                      text: '\n',
+                      text: '\nthere are times when; (something) happens on occasions',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +75,16 @@ class grammer_36 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'ときどき日本料理をすることがあります。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nokidoki nihon ryouri wo suru koto ga arimasu.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nSometimes I make Japanese dishes.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'たいてい現金で払いますが、たまにカードを使うことがあります。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\ntaitei genkin de haraimasu ga, tama ni kaado wo tsukau koto ga arimasu.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI usually pay with cash but sometimes I use credit cards.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

@@ -10,7 +10,7 @@ class grammer_7 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#7.ばかりに'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_7 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'ばかりに (bakari ni)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-casual, past + ばかりに', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nいAdj + ばかりに', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + な/である + ばかりに', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nN + ばかりに', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nbecause, on account of negative result',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_7 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '仕事の経験が少ないばかりに、就職口がなかなか見つからない。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nshigoto no keiken ga sukunai bakari ni, shuushokuguchi ga mitsukaranai.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI can`t find a job opportunity because of my lack of experience.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'お金がないばかりに、今度の旅行には行けなかったのです。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nokane ga nai bakari ni, kondo no ryokou niwa ikenakatta no desu.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI can`t travel this time because I have no money.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

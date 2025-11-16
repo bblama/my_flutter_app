@@ -10,7 +10,7 @@ class grammer_5 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#5.ばかりだ'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,12 @@ class grammer_5 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'ばかりだ (bakari da)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-dictionary + ばかりだ', style: TextStyle(color: Colors.red )),
                     TextSpan(
-                      text: '\n',
+                      text: '\ncontinue to (similar to 一方だ)',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +75,16 @@ class grammer_5 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '手術が終わってから、父の病気は悪くなるばかりでした。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nshujutsu ga owatte kara, chichi no byouki wa waruku naru bakari deshita.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nAfter the surgery, my dad`s illness keeps getting worse.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '英語も数学も学校を出てからは忘れていくばかりだ。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\neigo mo suugaku mo gakkou wo dete karawa wasurete iku bakari da.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI`ve been forgetting English and Maths since graduating from high school.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

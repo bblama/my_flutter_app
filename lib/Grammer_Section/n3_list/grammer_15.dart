@@ -10,7 +10,7 @@ class grammer_15 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#15.ふりをする'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_15 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'ふりをする (furi wo suru)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-casual + ふりをする', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nN + のふりをする', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nN + のふりをする', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + なふりをする', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nto pretend, to act as if',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_15 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '彼はそのことについて知っているふりをしているが、本当は知らないと思う。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkare wa sono koto ni tsuite shitteiru furi wo shiteiru ga, hountou wa shiranai to omou.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nHe pretends to know about it but I don`t think he really does.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '彼女は聞こえないふりをした。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkanojo wa kikoenai furi wo shita.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nShe pretended not to hear.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

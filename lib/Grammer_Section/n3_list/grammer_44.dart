@@ -10,7 +10,7 @@ class grammer_44 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#44.くせに'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_44 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'くせに (kuse ni)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-Casual + くせに', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nN + のくせに', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + なくせに', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nいAdj + くせに', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\neven though, and yet, in spite of',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_44 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '全然勉強しなかったくせに、試験に合格した。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nzenzen benkyou shinakatta kuseni, shiken ni goukaku shita.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI passed the test even though I didn`t study at all.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '彼女は暑いくせに、厚いコートを着ている。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkanojo wa atsui kuseni, atsui cooto wo kite iru.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nEven though it`s hot, she`s wearing a thick coat.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

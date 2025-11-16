@@ -10,7 +10,7 @@ class grammer_11 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#11.べつに～ない'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_11 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'べつに～ない (betsu ni ~ nai)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '別に + V-ない', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\n別に + N + ではない', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\n別に + いAdj (－い) + くない', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\n別に + なAdj + ではない', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nnot really, not particularly',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_11 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'わたしは別に彼女が大嫌いなわけではありませんよ。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nwatashi wa betsu ni kanojo ga daikirai na wake dewa arimasen yo.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nIt`s not that I really dislike her.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '彼は僕の失礼な言葉を別に気にする様子もない。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkare wa boku no shitsurei na kotoba wo betsu ni ki ni suru yousu mo nai.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nHe doesn`t look like he cares about my rude remarks.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

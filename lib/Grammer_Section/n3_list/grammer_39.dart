@@ -10,7 +10,7 @@ class grammer_39 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#39.ことに'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,14 @@ class grammer_39 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'ことに (koto ni)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-casual, past + ことに', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nいAdj + ことに', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + なことに', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nunusually, especially, particularly',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +77,16 @@ class grammer_39 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '残念なことに、努力して頑張りましたが、失敗しました。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nzannen na koto ni, doryoku shite ganbarimashita ga, shippai shimashita.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nUnfortunately, I tried my best but I failed.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '幸いなことに、やっと自分の好きな人と結婚できました。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nsaiwai na koto ni, yatto jibun no sukina hito to kekkon dekimashita.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nFortunately, I finally married the person I love.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

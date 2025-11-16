@@ -1,18 +1,370 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_1.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_10.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_11.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_12.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_13.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_14.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_15.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_16.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_17.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_18.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_19.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_2.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_20.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_21.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_22.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_23.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_24.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_25.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_26.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_27.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_28.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_29.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_3.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_30.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_31.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_32.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_33.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_34.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_35.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_36.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_37.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_38.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_39.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_4.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_40.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_41.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_42.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_43.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_44.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_45.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_46.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_5.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_6.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_7.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_8.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N3_vocab/Lesson_9.dart';
 
 class JLPT_N3_vocab extends StatelessWidget {
+  final List<Map<String, dynamic>> otherTopics = [
+    {
+      'title': 'Lesson-1',
+      'page': Lesson1(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-2',
+      'page': Lesson2(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-3',
+      'page': Lesson3(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-4',
+      'page': Lesson4(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-5',
+      'page': Lesson5(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-6',
+      'page': Lesson6(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-7',
+      'page': Lesson7(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-8',
+      'page': Lesson8(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-9',
+      'page': Lesson9(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-10',
+      'page': Lesson10(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-11',
+      'page': Lesson11(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-12',
+      'page': Lesson12(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-13',
+      'page': Lesson13(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-14',
+      'page': Lesson14(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-15',
+      'page': Lesson15(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-16',
+      'page': Lesson16(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-17',
+      'page': Lesson17(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-18',
+      'page': Lesson18(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-19',
+      'page': Lesson19(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-20',
+      'page': Lesson20(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-21',
+      'page': Lesson21(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-22',
+      'page': Lesson22(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-23',
+      'page': Lesson23(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-24',
+      'page': Lesson24(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-25',
+      'page': Lesson25(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-26',
+      'page': Lesson26(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-27',
+      'page': Lesson27(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-28',
+      'page': Lesson28(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-29',
+      'page': Lesson29(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-30',
+      'page': Lesson30(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-31',
+      'page': Lesson31(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-32',
+      'page': Lesson32(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-33',
+      'page': Lesson33(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-34',
+      'page': Lesson34(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-35',
+      'page': Lesson35(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-36',
+      'page': Lesson36(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-37',
+      'page': Lesson37(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-38',
+      'page': Lesson38(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-39',
+      'page': Lesson39(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-40',
+      'page': Lesson40(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-41',
+      'page': Lesson41(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-42',
+      'page': Lesson42(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-43',
+      'page': Lesson43(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-44',
+      'page': Lesson44(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-45',
+      'page': Lesson45(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-46',
+      'page': Lesson46(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    }
+  ];
+
+  final List<Color> colors =[
+    Colors.greenAccent,
+    Colors.blueAccent,
+    Colors.orangeAccent,
+    Colors.tealAccent,
+    Colors.purpleAccent,
+    Colors.cyanAccent,
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(preferredSize: Size.fromHeight(200.0),
-          child: AppBar(backgroundColor: Colors.purple,flexibleSpace: Stack(children: [Container(
-            width: double.infinity,
-            child: Image.asset('assets/n3_kanji.jpg',fit: BoxFit.fitHeight,color: Colors.purple,
-              colorBlendMode: BlendMode.darken,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(MediaQuery.of(context).size.height * 0.2), // Dynamically scales
+        child: AppBar(
+          backgroundColor: Colors.purple,
+          flexibleSpace: LayoutBuilder(
+            builder: (context, constraints) {
+              return Stack(
+                children: [
+                  Container(
+                    width: constraints.maxWidth, // Uses available width
+                    height: constraints.maxHeight, // Uses available height
+                    child: Image.asset(
+                      'assets/nepal.jpeg',
+                      fit: BoxFit.fill,
+                      color: Colors.purple.withOpacity(0.5),
+                      colorBlendMode: BlendMode.darken,
+                    ),
+                  ),
+                ],
+              );
+            },
+          ),
+        ),
+      ),
+      body: ListView.builder(
+        padding: const EdgeInsets.all(20.0),
+        itemCount: otherTopics.length,
+        itemBuilder: (context, index) {
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(
+                    builder: (context) => otherTopics[index]['page']),
+              );
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(vertical: 10.0),
+              padding: EdgeInsets.all(25.0),
+              decoration: BoxDecoration(
+                color: colors[index % colors.length],
+                borderRadius: BorderRadius.circular(10.0),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 2,
+                    blurRadius: 5,
+                    offset: Offset(0, 3),
+                  ),
+                ],
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    otherTopics[index]['title'],
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                  //Icon(icons[index % icons.length], color: Colors.white),
+                  Image.asset(
+                    otherTopics[index]['icon'],
+                    width: 30,
+                    height: 30,
+                    fit: BoxFit.cover,
+                  ),
+                ],
+              ),
             ),
-          )],),)),
-      body: Center(
-        child: Text('Content for JLPT N3 Kanji'),
+          );
+        },
       ),
     );
   }

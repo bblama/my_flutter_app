@@ -10,7 +10,7 @@ class grammer_6 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#6.ばかりでなく'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_6 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'ばかりでなく (bakari denaku)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-casual + ばかりか/ばかりでなく', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nN + ばかりか/ばかりでなく', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nいAdj + ばかりか/ばかりでなく', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + なばかりか/ばかりでなく', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nnot only… but also, as well as',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_6 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'この車は空気を汚さないばかりか、価格が高い。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkono kuruma wa kuuki wo yogosanai bakari ka, kakaku ga takai.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nThis car not only has poluted air, its price is also high.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'わたしは右手ばかりでなく左手でも字が書けます。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nwatashi wa migite bakari denaku hidarite demo ji ga kakemasu.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI can use not only my right hand but also my left hand to write.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

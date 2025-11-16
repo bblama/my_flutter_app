@@ -10,7 +10,7 @@ class grammer_21 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#21.ほど～ない'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,13 @@ class grammer_21 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'ほど～ない (hodo ~ nai)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'N 1 + ほど + N 2 + はない', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nN 1 + は + N 2 + ほど + Adj-ない', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nis not as… as',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +76,16 @@ class grammer_21 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '英語の文法は日本語ほど難しくありません。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\neigo no bunpou wa nihongo hodo muzukashiku arimasen.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nEnglish grammar is not as difficult as Japanese grammar.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '今年の合格率は去年ほど高くありません。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkotoshi no goukakuritsu wa kyonon hodo takaku arimasen.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nThis year`s pass rate is not as high as last year.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

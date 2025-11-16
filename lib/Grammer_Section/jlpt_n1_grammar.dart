@@ -24,7 +24,6 @@ class JLPT_N1_grammar extends StatelessWidget {
                   Container(
                     width: constraints.maxWidth, // Uses available width
                     height: constraints.maxHeight, // Uses available height
-                   // alignment: Alignment.topLeft,
                     child: Image.asset(
                       'assets/jlpt_grammar.jpg',
                       fit: BoxFit.fill,

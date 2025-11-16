@@ -58,21 +58,30 @@ class SpeakingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(preferredSize: Size.fromHeight(190.0),
-          child: AppBar(backgroundColor: Colors.purple, flexibleSpace:
-          Stack(children: [Container(
-            width: double.infinity,
-            child: Image.asset('assets/jlpt_vocabulary.jpg',fit: BoxFit.cover,
-              color: Colors.purple.withOpacity(0.5),
-              colorBlendMode: BlendMode.darken,
-            ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(MediaQuery.of(context).size.height * 0.2), // Dynamically scales
+        child: AppBar(
+          backgroundColor: Colors.purple,
+          flexibleSpace: LayoutBuilder(
+            builder: (context, constraints) {
+              return Stack(
+                children: [
+                  Container(
+                    width: constraints.maxWidth, // Uses available width
+                    height: constraints.maxHeight, // Uses available height
+                    child: Image.asset(
+                      'assets/ktm.webp',
+                      fit: BoxFit.fill,
+                      color: Colors.purple.withOpacity(0.5),
+                      colorBlendMode: BlendMode.darken,
+                    ),
+                  ),
+                ],
+              );
+            },
           ),
-            /*Align(alignment:Alignment.bottomLeft,
-            child: Padding(padding: const EdgeInsets.only(left: 10.0, bottom: 0.0),
-            child: Text('JLPT Kanji Level',style: TextStyle(color: Colors.white,fontSize: 22,fontWeight: FontWeight.bold,backgroundColor: Colors.purple),),
-            ),
-            ),*/
-          ],),)),
+        ),
+      ),
       body: ListView.builder(
         padding: const EdgeInsets.all(20.0),
         itemCount: speakingTopics.length,

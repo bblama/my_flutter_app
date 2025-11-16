@@ -61,9 +61,8 @@ class GrammarPage extends StatelessWidget {
                   Container(
                     width: constraints.maxWidth, // Uses available width
                     height: constraints.maxHeight, // Uses available height
-                    //alignment: Alignment.topLeft,
                     child: Image.asset(
-                      'assets/jlpt_grammar.jpg',
+                      'assets/ktm.webp',
                       fit: BoxFit.fill,
                       color: Colors.purple.withOpacity(0.5),
                       colorBlendMode: BlendMode.darken,
@@ -112,7 +111,6 @@ class GrammarPage extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  //Icon(icons[index % icons.length], color: Colors.white),
                   Image.asset(
                     grammerTopics[index]['icon'],
                     width: 30,

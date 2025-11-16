@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_app/Other_Section/other_page.dart';
 import 'Alphabet_Section/alphabet_page.dart';
 import 'Vocabulary_Section/vocabulary_page.dart';
 import 'Grammer_Section/grammar_page.dart';
@@ -42,11 +43,11 @@ class HomePage extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text('Speaking'),
+            title: Text('Other'),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => SpeakingPage()),
+                MaterialPageRoute(builder: (context) => OtherPage()),
               );
             },
           ),

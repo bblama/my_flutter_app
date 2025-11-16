@@ -10,7 +10,7 @@ class grammer_49 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#49.ものだ'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,13 @@ class grammer_49 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'ものだ (mono da)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-casual, past + ものだ', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nV-dictionary + ものだ', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nused to do something; should do something; of course',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +76,16 @@ class grammer_49 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '学生時代は毎日図書館に通ったものだ。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\ngakusei jidai wa mainichi toshokan ni kayotta mono da.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nWhen I was a student, I used to go to the library every day.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '小学生の時、よく学校をサボって母に叱られたものだ。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nshougakusei no toki, yoku gakkou wo sabotte haha ni shikarareta mono da.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nWhen I was in elementary school, I used to play truant and get solded by my mom.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

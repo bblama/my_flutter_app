@@ -10,7 +10,7 @@ class grammer_47 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#47.めったに～ない'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,13 @@ class grammer_47 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'めったに～ない (metta ni ~ nai)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'めったに + V-ない', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nN + はめったにない', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nhardly, rarely, seldom',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +76,16 @@ class grammer_47 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'それは人の一生にめったには見られない美しさだった。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nsore wa hito no jinsei ni metta niwa mirarenai utsukushisa datta.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nThat was a beauty that you could hardly see in your entire life.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '忙しくてめったに休みが取れない。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nisogashikute metta ni yasumi ga torenai.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI`m busy so that I can hardly take time off work.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

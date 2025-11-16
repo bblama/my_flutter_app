@@ -10,7 +10,7 @@ class grammer_45 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#45.まま'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_45 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'まま (mama)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'N + のまま', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nV-casual, past + まま', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nV-ない + まま', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + なまま', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nas it is',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_45 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'テレビをつけたまま寝てしまいました。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nterebi wo tsuketa mama nete shimaimashita.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI fell asleep while leaving the TV on.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '靴を履いたまま部屋に入ってしまった。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkutsu wo haita mama heya ni haitte shimatta.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI entered the room with my shoes on.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

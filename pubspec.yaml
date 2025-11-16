@@ -33,19 +33,19 @@ dependencies:
     sdk: flutter
   translator: ^1.0.3+1
   flutter_native_splash: ^1.3.2
-
-
+  flutter_tts: ^3.6.3
+  speech_to_text: ^7.3.0
+  http: ^1.1.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  http: ^1.2.2
+
   provider: ^6.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -72,57 +72,104 @@ flutter:
     - assets/jlpt_vocabulary.jpg
     - assets/kanji4.jpeg
     - assets/syoambhu.jpeg
+    - assets/nepal1.webp
+    - assets/nepal.jpeg
+    - assets/pokhra.webp
+    - assets/ktm.webp
+    - assets/ktm2.jpg
     - assets/n1.jpg
     - assets/n2.jpg
     - assets/n3.jpg
     - assets/n4.jpg
     - assets/n5.jpg
-    - assets/kanji.png
     - assets/n5_kanji.jpg
     - assets/n4_kanji.jpg
     - assets/n3_kanji.jpg
-    - assets/n2_kanji.jpg
-    - assets/n1_kanji.jpg
-    - assets/hiragana.png
-    - assets/katakana.png
     - assets/nepal_mountain.jpg
     - assets/n1_n5_jlpt.webp
     - assets/use.jpeg
     - assets/language_app.webp
     - assets/learn.png
-    - assets/n5_vocab/n5_vocab_1.png
-    - assets/n5_vocab/n5_vocab_2.png
-    - assets/n5_vocab/n5_vocab_3.png
-    - assets/n5_vocab/n5_vocab_4.png
-    - assets/n5_vocab/n5_vocab_6.png
-    - assets/n5_vocab/n5_vocab_7.png
-    - assets/n5_vocab/n5_vocab_8.png
-    - assets/n5_vocab/n5_vocab_9.png
-    - assets/n5_vocab/n5_vocab_10.png
-    - assets/n5_vocab/n5_vocab_12.png
-    - assets/n5_vocab/n5_vocab_13.png
-    - assets/n5_vocab/n5_vocab_14.png
-    - assets/n5_vocab/n5_vocab_15.png
-    - assets/n5_vocab/n5_vocab_16.png
-    - assets/n5_vocab/n5_vocab_17.png
-    - assets/n5_vocab/n5_vocab_18.png
-    - assets/n5_vocab/n5_vocab_19.png
-    - assets/n5_vocab/n5_vocab_20.png
-    - assets/n5_vocab/n5_vocab_21.png
-    - assets/n5_vocab/n5_vocab_22.png
-    - assets/n5_vocab/n5_vocab_23.png
-    - assets/n5_vocab/n5_vocab_24.png
-    - assets/n5_vocab/n5_vocab_25.png
-    - assets/n5_vocab/n5_vocab_26.png
-    - assets/n5_vocab/n5_vocab_27.png
-    - assets/n5_vocab/n5_vocab_28.png
-    - assets/n5_vocab/n5_vocab_29.png
-    - assets/n5_vocab/n5_vocab_30.png
-    - assets/n5_vocab/n5_vocab_31.png
-    - assets/n5_vocab/n5_vocab_32.png
-    - assets/n5_vocab/n5_vocab_33.png
-    - assets/n5_vocab/n5_vocab_34.png
-    - assets/n5_vocab/n5_vocab_35.png
+    - assets/N5_vocabulary/Lesson1.json
+    - assets/N5_vocabulary/Lesson2.json
+    - assets/N5_vocabulary/Lesson3.json
+    - assets/N5_vocabulary/Lesson4.json
+    - assets/N5_vocabulary/Lesson5.json
+    - assets/N5_vocabulary/Lesson6.json
+    - assets/N5_vocabulary/Lesson7.json
+    - assets/N5_vocabulary/Lesson8.json
+    - assets/N5_vocabulary/Lesson9.json
+    - assets/N5_vocabulary/Lesson10.json
+    - assets/N5_vocabulary/Lesson11.json
+    - assets/N5_vocabulary/Lesson12.json
+    - assets/N5_vocabulary/Lesson13.json
+    - assets/N5_vocabulary/Lesson14.json
+    - assets/N5_vocabulary/Lesson15.json
+    - assets/N5_vocabulary/Lesson16.json
+    - assets/N5_vocabulary/Lesson17.json
+    - assets/N5_vocabulary/Lesson18.json
+    - assets/N5_vocabulary/Lesson19.json
+    - assets/N5_vocabulary/Lesson20.json
+    - assets/N5_vocabulary/Lesson21.json
+    - assets/N5_vocabulary/Lesson22.json
+    - assets/N5_vocabulary/Lesson23.json
+    - assets/N5_vocabulary/Lesson24.json
+    - assets/N5_vocabulary/Lesson25.json
+    - assets/N4_vocabulary/Lesson1.json
+    - assets/N4_vocabulary/Lesson2.json
+    - assets/N4_vocabulary/Lesson3.json
+    - assets/N4_vocabulary/Lesson4.json
+    - assets/N4_vocabulary/Lesson5.json
+    - assets/N4_vocabulary/Lesson6.json
+    - assets/N4_vocabulary/Lesson7.json
+    - assets/N4_vocabulary/Lesson8.json
+    - assets/N4_vocabulary/Lesson9.json
+    - assets/N4_vocabulary/Lesson10.json
+    - assets/N4_vocabulary/Lesson11.json
+    - assets/N4_vocabulary/Lesson12.json
+    - assets/N4_vocabulary/Lesson13.json
+    - assets/N4_vocabulary/Lesson14.json
+    - assets/N4_vocabulary/Lesson15.json
+    - assets/N4_vocabulary/Lesson16.json
+    - assets/N4_vocabulary/Lesson17.json
+    - assets/N4_vocabulary/Lesson18.json
+    - assets/N4_vocabulary/Lesson19.json
+    - assets/N4_vocabulary/Lesson20.json
+    - assets/N4_vocabulary/Lesson21.json
+    - assets/N4_vocabulary/Lesson22.json
+    - assets/N4_vocabulary/Lesson23.json
+    - assets/N4_vocabulary/Lesson24.json
+    - assets/N4_vocabulary/Lesson25.json
+    - assets/N3_vocabulary/Lesson1.json
+    - assets/N3_vocabulary/Lesson2.json
+    - assets/N3_vocabulary/Lesson3.json
+    - assets/N3_vocabulary/Lesson4.json
+    - assets/N3_vocabulary/Lesson5.json
+    - assets/N3_vocabulary/Lesson6.json
+    - assets/N3_vocabulary/Lesson7.json
+    - assets/N3_vocabulary/Lesson8.json
+    - assets/N3_vocabulary/Lesson9.json
+    - assets/N3_vocabulary/Lesson10.json
+    - assets/N3_vocabulary/Lesson11.json
+    - assets/N3_vocabulary/Lesson12.json
+    - assets/N3_vocabulary/Lesson13.json
+    - assets/N3_vocabulary/Lesson14.json
+    - assets/N3_vocabulary/Lesson15.json
+    - assets/N3_vocabulary/Lesson16.json
+    - assets/N3_vocabulary/Lesson17.json
+    - assets/N3_vocabulary/Lesson18.json
+    - assets/N3_vocabulary/Lesson19.json
+    - assets/N3_vocabulary/Lesson20.json
+    - assets/N3_vocabulary/Lesson21.json
+    - assets/N3_vocabulary/Lesson22.json
+    - assets/N3_vocabulary/Lesson23.json
+    - assets/N3_vocabulary/Lesson24.json
+    - assets/N3_vocabulary/Lesson25.json
+
+
+
+
+    # - assets/n5_vocab.csv
 
 flutter_native_splash:
   android: true

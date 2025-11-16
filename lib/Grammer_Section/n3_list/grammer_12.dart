@@ -10,7 +10,7 @@ class grammer_12 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#12.だらけ'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,12 @@ class grammer_12 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'だらけ (darake)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'N + だらけ', style: TextStyle(color: Colors.red )),
                     TextSpan(
-                      text: '\n',
+                      text: '\ncovered all over in, full of',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +75,16 @@ class grammer_12 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '彼女は学生の間違いだらけの作文を家へ持ち帰して、いちいち直してやりました。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkanojo wa gakusei no machigai darake no sakubun wo ie e mochikaeshite, ichiichi naoshite yarimashita.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nShe brought the student`s essays that are full of errors home and corrected all of them.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '部屋の中はおもちゃだらけで立つところもありません。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nheya no naka wa omocha darake de tatsu tokoro mo arimasen.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nThe room is so full of toys that there`s no place to stand.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

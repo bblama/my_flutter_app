@@ -10,7 +10,7 @@ class grammer_32 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#32.きり'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,12 @@ class grammer_32 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'きり (kiri)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'N + きり/っきり', style: TextStyle(color: Colors.red )),
                     TextSpan(
-                      text: '\n',
+                      text: '\nonly, just',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +75,16 @@ class grammer_32 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '一度会ったきりの男性からメールが来た。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nichido atta kiri no dansei kara meeru ga kita.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI received an email from the guy I`ve only met once.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '兄が朝出かけたっきりまだ帰ってこない。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nani ga asa dekaketakkiri mada kaette konai.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nMy big brother hasn`t returned since he went out this morning.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

@@ -42,7 +42,7 @@ class grammer_3 extends StatelessWidget {
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
                     TextSpan(text: 'Location +　で', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\nin, at, on', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nin, at, on', style: TextStyle(color: Colors.blue)),
                     TextSpan(text: '\nNote: で is used to indicate the location of action', style: TextStyle(color: Colors.black)),
                   ],
                 ),

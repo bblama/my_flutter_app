@@ -10,7 +10,7 @@ class grammer_26 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#26.から言うと'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,12 @@ class grammer_26 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'から言うと (kara iu to)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'N + から言うと/から言えば/から言って', style: TextStyle(color: Colors.red )),
                     TextSpan(
-                      text: '\n',
+                      text: '\nin terms of, from the point of view of',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +75,16 @@ class grammer_26 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'この作文は、日本語能力から言えば、まだまだだが、内容はいい。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkono sakubun wa, nihongo nouryoku kara ieba, mada mada daga, naiyou wa ii.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nThis essay is still bad in terms of Japanese ability, but the content is good.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '現状から言って、直ちにその計画を実行するのは無理だ', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\ngenjou kara itte, tadachi ni sono keikaku o jikkou suru nowa muri da.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nWith our current condition, it`d be impossible for us to execute the plan right away.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

@@ -10,7 +10,7 @@ class grammer_4 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#4.ばかり'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,13 @@ class grammer_4 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'ばかり (bakari)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-て + ばかり', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nN + ばかり', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nonly, nothing but',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +76,16 @@ class grammer_4 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'テレビを見てばかりいると、目が悪くなりますよ。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nterebi wo mite bakari iru to, me ga waruku narimasu yo.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nIf you watch TV all the time your eyesight will get worse.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'うちの子は毎日遊んでばかりで勉強をしない。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nuchi no ko wa mainichi asonde bakari de benkyou wo shinai.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nMy child doesn`t study at all, he just plays all day.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

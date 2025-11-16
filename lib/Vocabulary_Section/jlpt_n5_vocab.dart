@@ -1,115 +1,245 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_1.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_10.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_11.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_12.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_13.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_14.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_15.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_16.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_17.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_18.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_19.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_2.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_20.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_21.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_22.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_23.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_24.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_25.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_3.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_4.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_5.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_6.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_7.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_8.dart';
+import 'package:my_flutter_app/Vocabulary_Section/N5_vocab/Lesson_9.dart';
 
 class JLPT_N5_vocab extends StatelessWidget {
-  //define list of vocabulary items
-  final List<String> imageList = [
-    'assets/n5_vocab/n5_vocab_1.png',
-    'assets/n5_vocab/n5_vocab_2.png',
-    'assets/n5_vocab/n5_vocab_3.png',
-    'assets/n5_vocab/n5_vocab_4.png',
-    'assets/n5_vocab/n5_vocab_6.png',
-    'assets/n5_vocab/n5_vocab_7.png',
-    'assets/n5_vocab/n5_vocab_8.png',
-    'assets/n5_vocab/n5_vocab_9.png',
-    'assets/n5_vocab/n5_vocab_10.png',
-    'assets/n5_vocab/n5_vocab_12.png',
-    'assets/n5_vocab/n5_vocab_13.png',
-    'assets/n5_vocab/n5_vocab_14.png',
-    'assets/n5_vocab/n5_vocab_15.png',
-    'assets/n5_vocab/n5_vocab_16.png',
-    'assets/n5_vocab/n5_vocab_17.png',
-    'assets/n5_vocab/n5_vocab_18.png',
-    'assets/n5_vocab/n5_vocab_19.png',
-    'assets/n5_vocab/n5_vocab_20.png',
-    'assets/n5_vocab/n5_vocab_21.png',
-    'assets/n5_vocab/n5_vocab_22.png',
-    'assets/n5_vocab/n5_vocab_23.png',
-    'assets/n5_vocab/n5_vocab_24.png',
-    'assets/n5_vocab/n5_vocab_25.png',
-    'assets/n5_vocab/n5_vocab_26.png',
-    'assets/n5_vocab/n5_vocab_27.png',
-    'assets/n5_vocab/n5_vocab_28.png',
-    'assets/n5_vocab/n5_vocab_29.png',
-    'assets/n5_vocab/n5_vocab_30.png',
-    'assets/n5_vocab/n5_vocab_31.png',
-    'assets/n5_vocab/n5_vocab_32.png',
-    'assets/n5_vocab/n5_vocab_33.png',
-    'assets/n5_vocab/n5_vocab_34.png',
-    'assets/n5_vocab/n5_vocab_35.png',
+  final List<Map<String, dynamic>> otherTopics = [
+    {
+      'title': 'Lesson-1',
+      'page': Lesson1(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-2',
+      'page': Lesson2(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-3',
+      'page': Lesson3(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-4',
+      'page': Lesson4(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-5',
+      'page': Lesson5(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-6',
+      'page': Lesson6(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-7',
+      'page': Lesson7(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-8',
+      'page': Lesson8(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-9',
+      'page': Lesson9(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-10',
+      'page': Lesson10(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-11',
+      'page': Lesson11(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-12',
+      'page': Lesson12(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-13',
+      'page': Lesson13(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-14',
+      'page': Lesson14(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-15',
+      'page': Lesson15(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-16',
+      'page': Lesson16(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-17',
+      'page': Lesson17(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-18',
+      'page': Lesson18(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-19',
+      'page': Lesson19(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-20',
+      'page': Lesson20(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-21',
+      'page': Lesson21(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-22',
+      'page': Lesson22(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-23',
+      'page': Lesson23(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-24',
+      'page': Lesson24(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Lesson-25',
+      'page': Lesson25(),
+      'icon': 'assets/n1_n5_jlpt.webp',
+    },
+  ];
+
+  final List<Color> colors =[
+    Colors.greenAccent,
+    Colors.blueAccent,
+    Colors.orangeAccent,
+    Colors.tealAccent,
+    Colors.purpleAccent,
+    Colors.cyanAccent,
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(preferredSize: Size.fromHeight(200.0),
-        child:AppBar(
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(MediaQuery.of(context).size.height * 0.2), // Dynamically scales
+        child: AppBar(
           backgroundColor: Colors.purple,
-          flexibleSpace: Stack(
-            children: [
-              Container(
-                width: double.infinity,
-                child: Image.asset(
-                  'assets/n5_kanji.jpg',
-                  fit: BoxFit.fitHeight,
-                  color: Colors.purple,
-                  colorBlendMode: BlendMode.darken,
-                ),
-              ),
-              Align(
-                alignment: Alignment.bottomLeft,
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 16.0, bottom: 16.0),
-                  child: Text(
-                    'JLPT N5 Vocabulary',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+          flexibleSpace: LayoutBuilder(
+            builder: (context, constraints) {
+              return Stack(
+                children: [
+                  Container(
+                    width: constraints.maxWidth, // Uses available width
+                    height: constraints.maxHeight, // Uses available height
+                    child: Image.asset(
+                      'assets/nepal.jpeg',
+                      fit: BoxFit.fill,
+                      color: Colors.purple.withOpacity(0.5),
+                      colorBlendMode: BlendMode.darken,
                     ),
                   ),
-                ),
-              ),
-            ],
+                ],
+              );
+            },
           ),
         ),
       ),
-      body: Column(
-        children: [
-          Expanded(
-            child: ListView.builder(
-              scrollDirection: Axis.vertical,
-              itemCount: imageList.length,
-              itemBuilder: (context, index) {
-                return Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(12.0),
-                    child: Image.asset(
-                      imageList[index],
-                      fit: BoxFit.cover,
-                      width: double.infinity,
-                      height: 200, // Fixed height for each image
-                      errorBuilder: (context, error, stackTrace) {
-                        return Container(
-                          color: Colors.grey[300],
-                          width: double.infinity,
-                          height: 400,
-                          child: Center(
-                            child: Icon(
-                              Icons.error,
-                              color: Colors.red,
-                              size: 50,
-                            ),
-                          ),
-                        );
-                      },
+      body: ListView.builder(
+        padding: const EdgeInsets.all(20.0),
+        itemCount: otherTopics.length,
+        itemBuilder: (context, index) {
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(context,
+                MaterialPageRoute(
+                    builder: (context) => otherTopics[index]['page']),
+              );
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(vertical: 10.0),
+              padding: EdgeInsets.all(25.0),
+              decoration: BoxDecoration(
+                color: colors[index % colors.length],
+                borderRadius: BorderRadius.circular(10.0),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 2,
+                    blurRadius: 5,
+                    offset: Offset(0, 3),
+                  ),
+                ],
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    otherTopics[index]['title'],
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   ),
-                );
-              },
+                  //Icon(icons[index % icons.length], color: Colors.white),
+                  Image.asset(
+                    otherTopics[index]['icon'],
+                    width: 30,
+                    height: 30,
+                    fit: BoxFit.cover,
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          );
+        },
       ),
     );
   }

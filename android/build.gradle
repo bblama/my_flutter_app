@@ -1,3 +1,36 @@
+//buildscript {
+//    ext.kotlin_version = '2.1.0'
+//    repositories {
+//        google()
+//        mavenCentral()
+//    }
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:8.6.1'
+//        //classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.1.0"
+//    }
+//}
+//
+////plugins {
+////    id "com.android.application"
+////    id "kotlin-android"
+////    id "dev.flutter.flutter-gradle-plugin"
+////}
+////
+////android {
+////    namespace = "com.example.my_flutter_app"
+////}
+////
+////flutter {
+////    source = "../.."
+////}
+//allprojects {
+//    repositories {
+//        google()
+//        mavenCentral()
+//    }
+//}
+
 allprojects {
     repositories {
         google()

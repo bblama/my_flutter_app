@@ -10,7 +10,7 @@ class grammer_28 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#28.っけ'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,16 +41,17 @@ class grammer_28 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'っけ (kke)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-casual, past + っけ', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nN + だっけ/だったっけ', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nいAdj + かったっけ', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + だっけ/だったっけ', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nwhat is… again?', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
-                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
+                      text: '\nNote: We use particle っけ to indicate that the speaker is trying to recall some information.',
+                      style: TextStyle(color: Colors.black),
                     ),
                   ],
                 ),
@@ -78,16 +79,16 @@ class grammer_28 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '明日のパーティーのこと、話したっけ？', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nashita no paatii no koto, hanashitakke?', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nDid I tell you about the party tomorrow?', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '国へ帰るのは、来週だったっけ？', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkuni e kaeru nowa, raishuu dattakke?', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nYou`re returning to your country next week, right?', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

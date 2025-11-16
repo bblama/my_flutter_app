@@ -229,7 +229,6 @@ class JLPT_N5_grammar extends StatelessWidget {
                       Container(
                         width: constraints.maxWidth, // Uses available width
                         height: constraints.maxHeight, // Uses available height
-                        //alignment: Alignment.topLeft,
                         child: Image.asset(
                           'assets/jlpt_grammar.jpg',
                           fit: BoxFit.fill,
@@ -245,7 +244,6 @@ class JLPT_N5_grammar extends StatelessWidget {
           ),
       body: ListView.builder(
         physics: const BouncingScrollPhysics(), // ← Add this line
-       // physics: const ClampingScrollPhysics(), // For Android-like behavior
         padding: const EdgeInsets.all(20.0),
         itemCount: grammerTopics.length,
         itemBuilder: (context, index) {

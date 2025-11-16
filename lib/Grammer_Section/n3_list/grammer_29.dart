@@ -10,7 +10,7 @@ class grammer_29 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#29.決して～ない'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_29 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: '決して～ない (kesshite ~ nai)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '決して+ N + でない', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\n決して+ V-ない', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\n決して+ いAdj (-い) + くない', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\n決して+ なAdj + でない', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nnever; by no means, not in the least, \nin no way',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_29 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'いろいろお世話になりました。親切にしていただいたことは決して忘れません。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\niroiro osewa ni narimashita. shinsetsu ni shite itadaita koto wa kesshite wasuremasen.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nThank you for everything. I`ll never forget your kindness.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'お父さんは君を決して許さないよ。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\notousan wa kimi wo kesshite yurusanai yo.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nDad will never forgive you.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

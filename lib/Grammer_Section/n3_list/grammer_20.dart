@@ -10,7 +10,7 @@ class grammer_20 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#20.ほど'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_20 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'ほど (hodo)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-casual + ほど', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nN + ほど', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nいAdj + ほど', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + なほど', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nto the extent that, so much… that; the more',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_20 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'よく勉強する学生ほど成績がいい。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nyoku benkyou suru gakusei hodo seiseki ga ii.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nThe more a student studies, the better result he`ll get.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '今年の日本語能力試験はそれほど簡単じゃなかった。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkotoshi no nihongo nouryoku shiken wa sore hodo kantan ja nakatta.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nThis year`s Japanese Language Proficiency Test wasn`t that easy.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

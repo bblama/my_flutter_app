@@ -10,7 +10,7 @@ class grammer_19 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#19.はずだ'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_19 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'はずだ (hazu da)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-casual + はずだ', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nいAdj + はずだ', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + なはずだ', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nN + のはずだ', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nit must be, it should be',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_19 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '今日は祝日だから、学校は休みのはずだ。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nyou wa shukujitsu dakara, gakkou wa yasumi no hazu da.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nToday is a national holiday so the school should be closed.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '今日は日曜日だからデパートはこんでいるはずです。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkyou wa nichiyoubi dakara depaato wa kondeiru hazu desu.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nToday is Sunday so the department store must be crowded.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

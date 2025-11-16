@@ -10,7 +10,7 @@ class grammer_43 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#43.くらい'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_43 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'くらい (kurai)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-casual + くらい', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nいAdj + くらい', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + なくらい', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nN + くらい', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nto the extent that, so… that',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_43 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '子供じゃないんだから、自分のことぐらい自分で決めなさい。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkodomo janain dakara, jibun no koto gurai jibun de kimenasai.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nYou`re not a kid anymore. Decide things by yourself.', style: TextStyle(color: Colors.black)),
                     TextSpan(
-                      text: '\n\n#2\n',
+                      text: '\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '今日は朝から仕事が忙しくて、食事をする時間もないくらいだ。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkyou wa asa kara shigoto ga isogashikute, shokuji wo suru jikan mo nai kurai da.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI`ve been so busy with my job since this morning that I don`t even have time to eat.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

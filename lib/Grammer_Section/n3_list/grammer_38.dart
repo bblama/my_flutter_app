@@ -10,7 +10,7 @@ class grammer_38 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#38.ことから'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_38 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'ことから (koto kara)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-casual + ことから', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nN + だったことから', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nいAdj + ことから', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + な/だったことから', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nfrom the fact that…',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_38 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'ガラスが割れていることから、泥棒が入ったとわかった。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\ngarasu ga wareteiru koto kara, dorobou ga haitta to wakatta.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI knew that I`ve been robbed when I saw the shattered glasses.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '顔がそっくりなことから、双子であることを知った。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nkao ga sokkuri na koto kara, futago de aru koto wo shitta.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI knew that they are twins from the fact that they look exactly alike.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

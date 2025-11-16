@@ -10,7 +10,7 @@ class grammer_24 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#24.一方で'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_24 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: '一方で (ippou de)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-dictionary + 一方(で)', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nN + である一方(で)', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nいAdj + 一方(で)', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + である一方(で)', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\non one hand, on the other hand',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_24 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'わたしの仕事は夏は非常に忙しい一方、冬は暇になる。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nwatashi no shigoto wa natsu wa hijou ni isogashii ippou, fuyu wa hima ni naru.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nMy job is very busy in the summer but I have more free time in the winter.', style: TextStyle(color: Colors.black)),
                     TextSpan(
-                      text: '\n\n#2\n',
+                      text: '\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'いい親は厳しく叱る一方で、ほめることも忘れない。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nii oya wa kibishiku shikaru ippou de, homeru koto mo wasurenai.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nA good parent knows how to scold the child strictly but also doesn`t forget to praise him.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

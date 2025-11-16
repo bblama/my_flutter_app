@@ -10,7 +10,7 @@ class grammer_1 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#1.あまり'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,16 @@ class grammer_1 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'あまり (amari)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'N + のあまり', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nV-dictionary + あまり', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nV-casual, past + あまり', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nいAdj-さ + のあまり', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nなAdj + あまり', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\ntoo much',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +79,16 @@ class grammer_1 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '試験に合格したうれしさのあまり、電話で叫んだ。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nshiken ni goukaku shita ureshisa no amari, denwa de sakenda.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nI was so happy when I passed the test that I screamed on the phone.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'うれしさのあまり、彼は涙を流しました。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nureshisa no amari, kare wa namida wo nagashimashita.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nHe was so happy that he cried.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

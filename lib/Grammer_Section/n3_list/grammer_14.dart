@@ -10,7 +10,7 @@ class grammer_14 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#14.どんなに～ても'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,15 @@ class grammer_14 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'どんなに～ても (donna ni ~ temo)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'どんなに + V-て + も', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nどんなに + N + でも', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nどんなに + いAdj + (－い)くても', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: '\nどんなに + なAdj + でも', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nno matter how',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +78,16 @@ class grammer_14 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'どんなに頑張っても、５０点しかとれなかった。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\ndonna ni ganbattemo, gojuu ten shika torenakatta.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nNo matter how hard I tried, I never got more than 50 points.', style: TextStyle(color: Colors.black)),
                     TextSpan(
-                      text: '\n\n#2\n',
+                      text: '\n\#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'どんなに一生懸命働いても、生活は楽にならないだろうと思う。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\ndonna ni isshoukenmei hataraitemo, seikatsu wa raku ni naranai darou to omou.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nNo matter how hard I work, I don`t think my life will get any easier.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

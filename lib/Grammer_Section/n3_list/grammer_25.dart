@@ -10,7 +10,7 @@ class grammer_25 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#25.かけ'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,12 @@ class grammer_25 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'かけ (kake)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-stem + かけだ/かけの', style: TextStyle(color: Colors.red )),
                     TextSpan(
-                      text: '\n',
+                      text: '\nhalf-, not yet finished..\nin the middle of',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +75,16 @@ class grammer_25 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'テーブルの上に食べかけのケーキが置いてある。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nteeburu no ue ni tabekake no keeki ga oite aru.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nThe half-finished cake is put on the table.', style: TextStyle(color: Colors.black)),
                     TextSpan(
-                      text: '\n\n#2\n',
+                      text: '\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '明日はほかの仕事をしなければならないのだから、この仕事をやりかけのまま、帰るわけにはいかない。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nashita wa hoka no shigoto wo shinakereba naranai no dakara, kono shigoto wo yarikake no mama, kaeru wake niwa ikanai.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nTomorrow I have to do other work so I can`t leave this work undone and go home.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

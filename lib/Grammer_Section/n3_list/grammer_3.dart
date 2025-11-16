@@ -10,7 +10,7 @@ class grammer_3 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#3.ばいい'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,16 +41,12 @@ class grammer_3 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'ばいい (ba ii)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-ばconditional + いい', style: TextStyle(color: Colors.red )),
                     TextSpan(
-                      text: '\n',
-                      style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
+                      text: '\nshould, can, it`d be good if', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
                 ),
@@ -78,16 +74,16 @@ class grammer_3 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '話したいことがあれば、どんどん話せばいい。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nhanashitai koto ga areba, dondon hanaseba ii.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nIf there`s something you want to say, you should just say it.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'わざわざ来る必要はないです。電話で連絡すればいいです。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nwazawaza kuru hitsuyou wa nai desu. denwa de renraku sureba ii desu.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nYou don`t need to come all the way here. You should just give us a call.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

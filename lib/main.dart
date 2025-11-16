@@ -108,7 +108,7 @@ class HomePage extends StatelessWidget {
             _buildGridTile(context, 'Alphabet', Icons.sort_by_alpha, AlphabetPage()),
             _buildGridTile(context, 'Vocabulary', Icons.book, VocabularyPage()),
             _buildGridTile(context, 'Grammer', Icons.rule_sharp, GrammarPage()),
-            _buildGridTile(context, 'Speaking', Icons.mic, SpeakingPage()),
+            //_buildGridTile(context, 'Speaking', Icons.mic, SpeakingPage()),
             _buildGridTileWithImage(context, 'Kanji', 'assets/kanji4.jpeg', KanjiPage()),
             _buildGridTile(context, 'Other', Icons.more_horiz, OtherPage()),
           ],

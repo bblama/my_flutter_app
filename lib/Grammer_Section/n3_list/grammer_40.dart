@@ -10,7 +10,7 @@ class grammer_40 extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: PreferredSize(preferredSize: Size.fromHeight(65.0),
-        child: AppBar(title: Text('N3 #'),
+        child: AppBar(title: Text('N3#40.ことになる'),
           backgroundColor: Colors.blue,
           centerTitle: true,
           flexibleSpace: Stack(
@@ -41,15 +41,13 @@ class grammer_40 extends StatelessWidget {
                   style: TextStyle(fontSize: screenWidth * 0.04, height: 1.4), // for responsive font size
                   children: [
                     TextSpan(
-                      text: '\n',
+                      text: 'ことになる (koto ni naru)\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.red )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.red)),
+                    TextSpan(text: 'V-dictionary + ことになる', style: TextStyle(color: Colors.red )),
+                    TextSpan(text: '\nV-ない + ことになる', style: TextStyle(color: Colors.red)),
                     TextSpan(
-                      text: '\n',
+                      text: '\nit has been decided that…, it has been arranged so that…',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
                     ),
                   ],
@@ -78,16 +76,16 @@ class grammer_40 extends StatelessWidget {
                       text: '#1\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: 'よく話し合った結果、やはり離婚ということになりました。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nyoku hanashiatta kekka, yahari rikon toiu koto ni narimashita.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nAfter a long discussion, we`ve decided to get a divorce.', style: TextStyle(color: Colors.black)),
                     TextSpan(
                       text: '\n\n#2\n',
                       style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
                     ),
-                    TextSpan(text: '', style: TextStyle(color: Colors.black )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.blue )),
-                    TextSpan(text: '\n', style: TextStyle(color: Colors.black)),
+                    TextSpan(text: '来月からこの会社で働くことになりました。', style: TextStyle(color: Colors.black )),
+                    TextSpan(text: '\nraigetsu kara kono kaisha de hataraku koto ni narimashita.', style: TextStyle(color: Colors.blue )),
+                    TextSpan(text: '\nIt`s been decided that I`ßll work for this company starting from next month.', style: TextStyle(color: Colors.black)),
                   ],
                 ),
               ),

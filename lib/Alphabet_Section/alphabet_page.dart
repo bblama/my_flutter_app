@@ -23,7 +23,7 @@ class _AlphabetPageState extends State<AlphabetPage> {
       case 1:
         return KatakanaPageContent();
       default:
-        return Center(child: Text('Select a Page', style: TextStyle(fontSize: 16)));
+        return Center(child: Text('Select a Page', style: TextStyle(fontSize: 14)));
     }
   }
 
@@ -65,7 +65,7 @@ class _AlphabetPageState extends State<AlphabetPage> {
               children: [
                 SizedBox(
                   width: 155, // Set width for buttons
-                  height: 55, // Set height for buttons
+                  height: 45, // Set height for buttons
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: _selectedButtonIndex == 0 ? Colors.blue.shade700 : Colors.blue, // Highlight selected button
@@ -82,7 +82,7 @@ class _AlphabetPageState extends State<AlphabetPage> {
                     child: Text(
                       'Hiragara\nひらがな',
                       style: TextStyle(
-                        fontSize: 16, // Set font size
+                        fontSize: 14, // Set font size
                         fontWeight: FontWeight.bold, // Set font weight
                       ),
                     ),
@@ -91,7 +91,7 @@ class _AlphabetPageState extends State<AlphabetPage> {
                 SizedBox(width: 20), // Space between buttons
                 SizedBox(
                   width: 155, // Set width for buttons
-                  height: 55, // Set height for buttons
+                  height: 45, // Set height for buttons
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: _selectedButtonIndex == 1 ? Colors.green.shade700 : Colors.green, // Highlight selected button
@@ -108,7 +108,7 @@ class _AlphabetPageState extends State<AlphabetPage> {
                     child: Text(
                       'Katakana\nカタカナ',
                       style: TextStyle(
-                        fontSize: 16, // Set font size
+                        fontSize: 14, // Set font size
                         fontWeight: FontWeight.bold, // Set font weight
                       ),
                     ),

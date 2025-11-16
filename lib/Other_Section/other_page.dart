@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_app/Other_Section/JLPT_Questions.dart';
 import 'JLPT_Questions.dart';
+import 'Speak_into_text.dart';
 import 'Quick_Test.dart';
 
 class OtherPage extends StatelessWidget {
@@ -34,7 +35,13 @@ class OtherPage extends StatelessWidget {
       'title': 'Interview_Preparations',
       'page': '',
       'icon': 'assets/n1_n5_jlpt.webp',
+    },
+    {
+      'title': 'Speak_into_text',
+      'page':  Speak_into_text(),
+      'icon': 'assets/n1_n5_jlpt.webp',
     }
+
   ];
 
   final List<Color> colors =[
@@ -49,18 +56,29 @@ class OtherPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(preferredSize: Size.fromHeight(190.0),
-          child: AppBar(backgroundColor: Colors.purple, flexibleSpace:
-          Stack(children: [Container(
-            width: double.infinity,
-            child: Image.asset('assets/jlpt_grammar.jpg',fit: BoxFit.cover,
-              color: Colors.purple.withOpacity(0.5),
-              colorBlendMode: BlendMode.darken,
-            ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(MediaQuery.of(context).size.height * 0.2), // Dynamically scales
+        child: AppBar(
+          backgroundColor: Colors.purple,
+          flexibleSpace: LayoutBuilder(
+            builder: (context, constraints) {
+              return Stack(
+                children: [
+                  Container(
+                    width: constraints.maxWidth, // Uses available width
+                    height: constraints.maxHeight, // Uses available height
+                    child: Image.asset(
+                      'assets/nepal.jpeg',
+                      fit: BoxFit.fill,
+                      color: Colors.purple.withOpacity(0.5),
+                      colorBlendMode: BlendMode.darken,
+                    ),
+                  ),
+                ],
+              );
+            },
           ),
-          ],
-          ),
-          )
+        ),
       ),
       body: ListView.builder(
         padding: const EdgeInsets.all(20.0),
@@ -115,4 +133,6 @@ class OtherPage extends StatelessWidget {
     );
   }
 }
+
+
 
